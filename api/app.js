@@ -127,7 +127,7 @@ app.use(
       },
 
       async fetchVideos() {
-        key = "AIzaSyDb4ykaSu8hFzYozRNvW8o4PGnb-b8uFzo";
+        key = "PUT YOUR OWN KEY";
         url = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&chart=mostPopular&maxResults=200&regionCode=IN&key=" + key;
         let response = await fetch(url);
         let videodata = await response.json()
