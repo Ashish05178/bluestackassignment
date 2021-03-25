@@ -1,0 +1,39 @@
+
+body{
+  /* background-color: lightblue; */
+}
+.live_card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 2%;
+    /* width: 25%; */
+    margin-top: 2%;
+    border-radius: 5px;
+  }
+
+  .video_card_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+      
+  }
+
+  @media screen and (max-width: 600px) {
+    .video_card_grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 20px;
+        margin-top: 30px;
+        margin-left: 10px;
+      }
+      #videoplay{
+        height: 50px;
+      }
+
+      h1{
+        font-size: medium;
+      }
+
+      
+  }
